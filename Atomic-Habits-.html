@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="kin.png" type="image/png">
+</head>
+<body>
+    <div style="display: flex; align-items: center;">
+        <img src="kin.png" alt="logo" class="logo" style="vertical-align: middle;">
+        <h1 class="header" style="margin-left: 10px;">PDF Viewer | By Mr.Aayush Bhandari</h1>
+    </div>
+<div class="upload-container" id="upload-section">
+    <h1>PDF Viewer</h1>
+    <label class="upload-btn">
+        Select PDF
+        <input type="file" id="upload-pdf" accept="application/pdf" hidden>
+    </label>
+    <p>Select The Pdf Or Drag And Drop Your Pdf Here.</p>
+</div>
+
+<div class="pdf-container hidden">
+    <div class="top-bar">
+        <button id="fullscreen">🖥️ Fullscreen</button>
+        <button id="download-pdf">📥 Download</button>
+        <button id="print-pdf">🖨️ Print</button>
+    </div>
+
+    <div class="pdf-viewer">
+        <canvas id="pdf-render"></canvas>
+    </div>
+
+    <div class="bottom-bar">
+        <button id="prev-page">⬅️ Prev</button>
+        <span>Page: <input type="number" id="page-input" min="1"> / <span id="page-count"></span></span>
+        <button id="next-page">Next ➡️</button>
+
+        <button id="zoom-in">🔍➕</button>
+        <button id="zoom-out">🔍➖</button>
+        <button id="rotate-pdf">🔄 Rotate</button>
+    </div>
+</div>
+<footer>
+    <p>&copy; 2025 Mr. Aayush Bhandari. All Rights Reserved.</p>
+    <div>
+        <a href="http://loanalculator01.blogspot.com/" target="_blank">Blogger</a> |
+        <a href="https://github.com/Aayushkin" target="_blank">GitHub</a> |
+        <a href="https://m.facebook.com/people/Aayush-tech07/100091516755478/" target="_blank">Facebook</a>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+<script src="script.js"></script>
+</html>

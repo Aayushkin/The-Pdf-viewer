@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    text-align: center;
+    background: #f8f8f8;
+}
+
+/* Upload Section */
+.upload-container {
+    margin: 20px auto;
+    width: 60%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.upload-btn {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upload-btn:hover {
+    background: #0056b3;
+}
+
+/* Drag & Drop Area */
+.upload-container {
+    border: 2px dashed #007bff;
+    padding: 30px;
+    text-align: center;
+}
+
+.upload-container.dragover {
+    background-color: #d9e8ff;
+}
+
+/* PDF Viewer */
+.pdf-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.top-bar, .bottom-bar {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    background: #007bff;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background: white;
+    color: black;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #ffcc00;
+}
+
+.pdf-viewer {
+    display: flex;
+    justify-content: center;
+}
+
+canvas {
+    border: 1px solid black;
+    margin: 10px 0;
+    max-width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.pdf-viewer {
+    overflow: auto;
+    max-height: 100vh; /* Allow scrolling in fullscreen */
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    margin: 20px 0;
+    border-radius: 50%;
+    background: #007bff;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.logo:hover{
+    background: #0056b3;
+    background-color: #007bff;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo:hover {
+    background: #0056b3;
+    box-shadow: 0 0 10px 2px #00f;
+    transform: rotate(30deg);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    user-select: all;
+}
+a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    }
+
+    a:hover {
+        color: #ffcc00;
+    }
+h1.header{
+    font-size: 2rem;
+    margin: 20px 0;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    color: #007bff;
+}
+h1.header:hover{
+    color: #c7ac12;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
